@@ -1,12 +1,12 @@
 /obj/item/projectile/bullet/shotgun_slug
 	name = "12g shotgun slug"
-	damage = 60
+	damage = 70
 	sharpness = SHARP_POINTY
 	bare_wound_bonus = 10
 
 /obj/item/projectile/bullet/shotgun_beanbag
 	name = "beanbag slug"
-	stamina = 70
+	stamina = 80
 	//skyrat edit
 	damage = 10
 	bare_wound_bonus = 10
@@ -15,16 +15,16 @@
 
 /obj/item/projectile/bullet/incendiary/shotgun
 	name = "incendiary slug"
-	damage = 20
+	damage = 30
 
 /obj/item/projectile/bullet/incendiary/shotgun/dragonsbreath
 	name = "dragonsbreath pellet"
-	damage = 5
+	damage = 10
 
 /obj/item/projectile/bullet/shotgun_stunslug
 	name = "stunslug"
-	damage = 5
-	stamina = 30
+	damage = 2
+	stamina = 60
 	stutter = 5
 	jitter = 20
 	range = 7
@@ -51,7 +51,7 @@
 	name = "meteorslug"
 	icon = 'icons/obj/meteor.dmi'
 	icon_state = "dust"
-	damage = 20
+	damage = 30
 	knockdown = 80
 	hitsound = 'sound/effects/meteorimpact.ogg'
 	embedding = EMBED_NONE
@@ -84,7 +84,7 @@
 /obj/item/projectile/bullet/pellet/shotgun_buckshot
 	name = "buckshot pellet"
 	//skyrat edit
-	damage = 7.5
+	damage = 9
 	bare_wound_bonus = 10
 	wound_falloff_tile = -2.5 // TG does this; it makes sense to do.
 	//
@@ -95,7 +95,7 @@
 	embedding = null
 	bare_wound_bonus = 10
 	damage = 2
-	stamina = 15
+	stamina = 20
 
 /obj/item/projectile/bullet/pellet/Range()
 	..()
@@ -121,7 +121,7 @@
 // Mech Scattershots
 
 /obj/item/projectile/bullet/scattershot
-	damage = 20
+	damage = 25
 
 /obj/item/projectile/bullet/seed
 	damage = 4
@@ -140,6 +140,6 @@
 
 /obj/item/projectile/bullet/pellet/shotgun_incapacitate
 	name = "incapacitating pellet"
-	damage = 1
-	stamina = 6
+	damage = 0.5
+	stamina = 7
 	embedding = null
