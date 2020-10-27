@@ -12,7 +12,7 @@
 //port tg's armor energy resists, adds reskins to various armors
 /obj/item/clothing/head/helmet
 	can_flashlight = 0 //for the sake of reskins
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 30,"energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 15)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 40)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/hats.dmi',
 	"Tactical" = 'modular_skyrat/icons/obj/clothing/hats.dmi',
@@ -44,7 +44,7 @@
 
 /obj/item/clothing/head/helmet/alt
 	can_flashlight = 1
-	armor = list("melee" = 15, "bullet" = 60, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 15)
+	armor = list("melee" = 40, "bullet" = 70, "laser" = 40, "energy" = 40, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 30)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/hats.dmi',
 	"Tactical" = 'modular_skyrat/icons/obj/clothing/hats.dmi',
@@ -63,11 +63,11 @@
 	)
 
 /obj/item/clothing/head/helmet/riot
-	armor = list("melee" = 55, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80, "wound" = 25)
+	armor = list("melee" = 80, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80, "wound" = 50)
 	unique_reskin = null
 
 /obj/item/clothing/head/helmet/swat
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 30,"energy" = 40, "bomb" = 50, "bio" = 90, "rad" = 20, "fire" = 50, "acid" = 50, "wound" = 25)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/hats.dmi',
 	"Skulldozer" = 'modular_skyrat/icons/obj/clothing/hats.dmi'
@@ -134,7 +134,7 @@
 	armor = list("melee" = 25, "bullet" = 5, "laser" = 25, "energy" = 35, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 50, "wound" = 5)
 
 /obj/item/clothing/head/HoS
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 35, "bomb" = 25, "bio" = 10, "rad" = 0, "fire" = 50, "acid" = 60, "wound" = 25)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 	unique_reskin = list(
 	"Default" = "hoscap",
 	"Helmet" = "helmet",
@@ -146,7 +146,7 @@
 	unique_reskin = null
 
 /obj/item/clothing/head/warden
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 60, "wound" = 20)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 	unique_reskin = list(
 	"Default" = "policehelm",
 	"Corporate Beret" = "beret_corporate_warden",
@@ -155,7 +155,7 @@
 	)
 
 /obj/item/clothing/head/beret/sec
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 50, "wound" = 15)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 40)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/hats.dmi',
 	"Solfed Contractor" = 'modular_skyrat/icons/obj/clothing/hats.dmi',
@@ -180,7 +180,7 @@
 
 
 /obj/item/clothing/head/beret/sec/navywarden
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 50, "wound" = 20)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 	unique_reskin = null
 
 /obj/item/clothing/head/helmet/space/hardsuit
@@ -210,7 +210,7 @@
 	armor = list("melee" = 40, "bullet" = 5, "laser" = 10, "energy" = 20, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 90, "wound" = 10)
 
 /obj/item/clothing/head/helmet/space/hardsuit/mining
-	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 20, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 75, "wound" = 15)
+	armor = list("melee" = 50, "bullet" = 35, "laser" = 40, "energy" = 20, "bomb" = 80, "bio" = 100, "rad" = 50, "fire" = 80, "acid" = 75, "wound" = 15)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/hats.dmi',
 	"Explorer" = 'modular_skyrat/icons/obj/clothing/hats.dmi',
@@ -253,16 +253,16 @@
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/resonator, /obj/item/mining_scanner, /obj/item/t_scanner/adv_mining_scanner, /obj/item/gun/energy/kinetic_accelerator, /obj/item/pickaxe, /obj/item/gun/energy/plasmacutter)
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90, "wound" = 25)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 70, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 40)
 
 /obj/item/clothing/suit/space/hardsuit/syndi
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90, "wound" = 25)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 70, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 40)
 
 /obj/item/clothing/head/helmet/space/hardsuit/syndi/elite
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 60, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100, "wound" = 30)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 90, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 50, "energy" = 60, "bomb" = 55, "bio" = 100, "rad" = 70, "fire" = 100, "acid" = 100, "wound" = 30)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 90, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 
 /obj/item/clothing/head/helmet/space/hardsuit/wizard
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 50, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100, "wound" = 35)
@@ -283,7 +283,7 @@
 	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 20, "bomb" = 100, "bio" = 100, "rad" = 60, "fire" = 60, "acid" = 80, "wound" = 12)
 
 /obj/item/clothing/head/helmet/space/hardsuit/security
-	armor = list("melee" = 35, "bullet" = 15, "laser" = 30,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 40)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/hats.dmi',
 	"Riot" = 'modular_skyrat/icons/obj/clothing/hats.dmi',
@@ -321,7 +321,7 @@
 	)
 
 /obj/item/clothing/suit/space/hardsuit/security
-	armor = list("melee" = 35, "bullet" = 15, "laser" = 30,"energy" = 40, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75, "wound" = 20)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 40)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/suits.dmi',
 	"Riot" = 'modular_skyrat/icons/obj/clothing/suits.dmi',
@@ -356,11 +356,11 @@
 	unique_reskin = null
 
 /obj/item/clothing/suit/space/hardsuit/security/hos
-	armor = list("melee" = 45, "bullet" = 25, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 100, "rad" = 50, "fire" = 95, "acid" = 95, "wound" = 25)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 70, "bomb" = 80, "bio" = 100, "rad" = 0, "fire" = 100, "acid" = 50, "wound" = 60)
 	unique_reskin = null
 
 /obj/item/clothing/suit/space/swat
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 60, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100, "wound" = 35)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" = 70, "bomb" = 80, "bio" = 100, "rad" = 0, "fire" = 100, "acid" = 50, "wound" = 60)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/suits.dmi',
 	"Skulldozer" = 'modular_skyrat/icons/obj/clothing/suits.dmi'
@@ -412,7 +412,7 @@
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 60, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100, "wound" = 45)
 
 /obj/item/clothing/suit/armor/vest
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 15)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 40)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/suits.dmi',
 	"Tactical" = 'modular_skyrat/icons/obj/clothing/suits.dmi',
@@ -447,7 +447,7 @@
 	)
 
 /obj/item/clothing/suit/armor/hos
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 90, "wound" = 25)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/suits.dmi',
 	"Trench" = 'icons/obj/clothing/suits.dmi',
@@ -470,11 +470,11 @@
 	)
 
 /obj/item/clothing/suit/armor/vest/capcarapace
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 50, "energy" = 50, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 90, "wound" = 30)
+	armor = list("melee" = 70, "bullet" = 70, "laser" = 70, "energy" =70, "bomb" = 80, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 90, "wound" = 60)
 	unique_reskin = null
 
 /obj/item/clothing/suit/armor/riot
-	armor = list("melee" = 55, "bullet" = 20, "laser" = 15, "energy" = 25, "bomb" = 10, "bio" = 10, "rad" = 0, "fire" = 65, "acid" = 70, "wound" = 25)
+	armor = list("melee" = 80, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80, "wound" = 50)
 	slowdown = 0
 	unique_reskin = null
 
@@ -483,7 +483,7 @@
 	unique_reskin = null
 
 /obj/item/clothing/suit/armor/bulletproof
-	armor = list("melee" = 15, "bullet" = 60, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 15)
+	armor = list("melee" = 40, "bullet" = 70, "laser" = 40, "energy" = 40, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 30)
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/suits.dmi',
 	"Tactical" = 'modular_skyrat/icons/obj/clothing/suits.dmi',
@@ -502,11 +502,11 @@
 	)
 
 /obj/item/clothing/suit/armor/laserproof
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 60, "energy" = 60, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "wound" = 15)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 80, "energy" = 80, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "wound" = 10)
 	unique_reskin = null
 
 /obj/item/clothing/suit/armor/centcom
-	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 50, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 90, "wound" = 40)
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 50, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 90, "wound" = 50)
 	unique_reskin = null
 
 /obj/item/clothing/suit/armor/heavy
