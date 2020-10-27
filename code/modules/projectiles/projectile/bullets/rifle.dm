@@ -2,14 +2,14 @@
 
 /obj/item/projectile/bullet/a556
 	name = "5.56mm bullet"
-	damage = 35
+	damage = 45
 	wound_bonus = -20
 
 // 7.62 (Nagant Rifle)
 
 /obj/item/projectile/bullet/a762
 	name = "7.62 bullet"
-	damage = 65    //Skyrat edit: Only obtainable branded gun that fires this caliber is the Mosin I believe. Assume it's 7.62x54mm Rimmed.
+	damage = 75    //Skyrat edit: Only obtainable branded gun that fires this caliber is the Mosin I believe. Assume it's 7.62x54mm Rimmed.
 	wound_bonus = -70
 
 /obj/item/projectile/bullet/a762_enchanted
