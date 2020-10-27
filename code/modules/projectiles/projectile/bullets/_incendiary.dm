@@ -1,5 +1,5 @@
 /obj/item/projectile/bullet/incendiary
-	damage = 20
+	damage = 25
 	var/fire_stacks = 4
 	wound_bonus = -50
 
