@@ -8,7 +8,7 @@
 	equip_delay_other = 40
 	max_integrity = 250
 	resistance_flags = NONE
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 15)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 40)
 
 /obj/item/clothing/suit/armor/Initialize()
 	. = ..()
@@ -57,7 +57,7 @@
 	icon_state = "hos"
 	item_state = "greatcoat"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 70, "acid" = 90, "wound" = 20)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 	cold_protection = CHEST|GROIN|LEGS|ARMS
 	heat_protection = CHEST|GROIN|LEGS|ARMS
 	strip_delay = 80
@@ -147,7 +147,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
-	armor = list("melee" = 50, "bullet" = 10, "laser" = 10, "energy" = 10, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80, "wound" = 30)
+	armor = list("melee" = 80, "bullet" = 40, "laser" = 40, "energy" = 40, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 80, "wound" = 50)
 	blocks_shove_knockdown = TRUE
 	strip_delay = 80
 	equip_delay_other = 60
@@ -167,7 +167,7 @@
 	icon_state = "bulletproof"
 	item_state = "armor"
 	blood_overlay_type = "armor"
-	armor = list("melee" = 15, "bullet" = 60, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 20)
+	armor = list("melee" = 40, "bullet" = 70, "laser" = 40, "energy" = 40, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 30)
 	strip_delay = 70
 	equip_delay_other = 50
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
@@ -178,7 +178,7 @@
 	icon_state = "armor_reflec"
 	item_state = "armor_reflec"
 	blood_overlay_type = "armor"
-	armor = list("melee" = 10, "bullet" = 10, "laser" = 60, "energy" = 50, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "wound" = 10)
+	armor = list("melee" = 30, "bullet" = 30, "laser" = 80, "energy" = 80, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 100, "wound" = 10)
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 	var/hit_reflect_chance = 40
@@ -226,7 +226,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_TEMP_PROTECT
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_TEMP_PROTECT
-	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 50, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 90, "wound" = 35)
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 80, "energy" = 50, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 90, "acid" = 90, "wound" = 35)
 
 /obj/item/clothing/suit/armor/heavy
 	name = "heavy armor"
@@ -360,7 +360,7 @@
 	icon_state = "hardsuit-secexo"
 	item_state = "hardsuit-secexo"
 	max_integrity = 250
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 50, "rad" = 0, "fire" = 55, "acid" = 70, "wound" = 15)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 40)
 	allowed = list(/obj/item/ammo_box, /obj/item/ammo_casing, /obj/item/flashlight, /obj/item/gun/ballistic, /obj/item/gun/energy, /obj/item/kitchen/knife/combat, /obj/item/melee/baton, /obj/item/melee/classic_baton/telescopic, /obj/item/reagent_containers/spray/pepper, /obj/item/restraints/handcuffs, /obj/item/tank/internals/emergency_oxygen, /obj/item/tank/internals/plasmaman, /obj/item/blunderbuss) //I had to do this all snowflake style because it just would not accept any sort of global list, fucking kill me
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security_armor
 	clothing_flags = THICKMATERIAL
@@ -416,7 +416,7 @@
 	desc = "An advanced version of the standard techarmor, sporting far better protection. It does lack the night vision of its non-tech counterpart, however."
 	icon_state = "hardsuit-cloaker" 
 	item_state = "hardsuit-cloaker"
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 35, "energy" = 50, "bomb" = 20, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 100, "wound" = 25)
+	armor = list("melee" = 50, "bullet" = 55, "laser" = 55, "energy" = 55, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security_armor/cloaker
 
 /obj/item/clothing/head/helmet/space/hardsuit/security_armor/cloaker //I couldn't get the NV to work. If someone else figures out how, please feel free to implement it here.
@@ -435,7 +435,7 @@
 	icon_state = "hardsuit0-hosexo"
 	item_state = "hardsuit0-hosexo"
 	hardsuit_type = "hosexo"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 25, "energy" = 10, "bomb" = 25, "bio" = 10, "rad" = 0, "fire" = 50, "acid" = 60, "wound" = 20)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 65, "energy" = 60, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 60)
 	mutantrace_variation = NONE
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDESNOUT
 	unique_reskin_icons = list(
@@ -465,7 +465,7 @@
 	icon_state = "hardsuit-hosexo"
 	item_state = "hardsuit-hosexo"
 	max_integrity = 300
-	armor = list("melee" = 35, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 50, "rad" = 0, "fire" = 70, "acid" = 90, "wound" = 20)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 65, "energy" = 60, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 60)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security_armor/hos
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT|HIDETAUR
 	unique_reskin_icons = list(
@@ -495,7 +495,7 @@
 	icon_state = "hardsuit-blueexo"
 	item_state = "hardsuit-blueexo"
 	max_integrity = 300
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 75, "wound" = 25)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 65, "energy" = 60, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 60)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/security_armor/blueshield
 
 /obj/item/clothing/head/helmet/space/hardsuit/security_armor/blueshield
@@ -503,7 +503,7 @@
 	desc = "The techarmor helmet of Command's first line of defense."
 	icon_state = "hardsuit0-blueexo"
 	item_state = "hardsuit0-blueexo"
-	armor = list("melee" = 30, "bullet" = 20, "laser" = 20,"energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 75, "acid" = 75, "wound" = 20)
+	armor = list("melee" = 60, "bullet" = 65, "laser" = 65, "energy" = 60, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 60)
 	hardsuit_type = "blueexo"
 	unique_reskin_icons = list(
 	"Default" = 'icons/obj/clothing/suits.dmi',
