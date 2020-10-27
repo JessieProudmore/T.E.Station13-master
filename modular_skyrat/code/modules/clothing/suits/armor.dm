@@ -23,7 +23,7 @@
 	anthro_mob_worn_overlay = 'modular_skyrat/icons/mob/clothing/suit_digi.dmi'
 	icon_state = "blueshield"
 	item_state = "blueshield"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 75, "wound" = 25)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 /obj/item/clothing/suit/armor/vest/blueshield/old
@@ -34,7 +34,7 @@
 	anthro_mob_worn_overlay = 'modular_skyrat/icons/mob/clothing/suit_digi.dmi'
 	icon_state = "blueshield_old"
 	item_state = "blueshield_old"
-	armor = list("melee" = 35, "bullet" = 35, "laser" = 30, "energy" = 40, "bomb" = 25, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 75, "wound" = 25)
+	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 50, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 	mutantrace_variation = STYLE_DIGITIGRADE|STYLE_NO_ANTHRO_ICON
 
 //makeshift armor
