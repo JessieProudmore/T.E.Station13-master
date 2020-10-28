@@ -6,7 +6,7 @@
 	density = TRUE
 	circuit = /obj/item/circuitboard/machine/bluespace_miner
 	layer = BELOW_OBJ_LAYER
-	var/list/ore_rates = list(/datum/material/iron = 0.3, /datum/material/glass = 0.3, /datum/material/plasma = 0.1,  /datum/material/silver = 0.1, /datum/material/gold = 0.05, /datum/material/titanium = 0.05, /datum/material/uranium = 0.05, /datum/material/diamond = 0.02)
+	var/list/ore_rates = list(/datum/material/iron = 1.5, /datum/material/glass = 1.5, /datum/material/plasma = 1.0,  /datum/material/silver = 1.0, /datum/material/gold = 0.7, /datum/material/titanium = 0.7, /datum/material/uranium = 0.7, /datum/material/diamond = 0.6)
 	var/datum/component/remote_materials/materials
 
 /obj/machinery/mineral/bluespace_miner/Initialize(mapload)
