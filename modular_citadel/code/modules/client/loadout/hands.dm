@@ -65,3 +65,11 @@
 	category = SLOT_HANDS
 	path = /obj/item/clothing/mask/cigarette/cigar
 	cost = 4 //smoking is bad mkay
+
+/datum/gear/cellphone
+	name = "Cellphone"
+	description =  "An old, compact cellphone for making calls."
+	category = SLOT_HANDS
+	path = /obj/item/phone/cellphone/broken
+	restricted_desc = "All, barring Prisoners"
+	cost = 2
