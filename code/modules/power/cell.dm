@@ -199,7 +199,7 @@
 
 /obj/item/stock_parts/cell/lascarbine
 	name = "laser carbine power supply"
-	maxcharge = 1500			//20 laser shots.
+	maxcharge = 2000			//20 laser shots at 1500 charge.
 
 /obj/item/stock_parts/cell/pulse //200 pulse shots
 	name = "pulse rifle power cell"
@@ -208,16 +208,16 @@
 
 /obj/item/stock_parts/cell/pulse/carbine //25 pulse shots
 	name = "pulse carbine power cell"
-	maxcharge = 5000
+	maxcharge = 20000
 
 /obj/item/stock_parts/cell/pulse/pistol //10 pulse shots
 	name = "pulse pistol power cell"
-	maxcharge = 2000
+	maxcharge = 8000
 
 /obj/item/stock_parts/cell/high
 	name = "high-capacity power cell"
 	icon_state = "hcell"
-	maxcharge = 10000
+	maxcharge = 15000
 	custom_materials = list(/datum/material/glass=60)
 	chargerate = 1500
 
@@ -225,7 +225,7 @@
 	name = "high-capacity power cell+"
 	desc = "Where did these come from?"
 	icon_state = "h+cell"
-	maxcharge = 15000
+	maxcharge = 20000
 	chargerate = 2250
 	rating = 2
 
@@ -235,7 +235,7 @@
 /obj/item/stock_parts/cell/super
 	name = "super-capacity power cell"
 	icon_state = "scell"
-	maxcharge = 20000
+	maxcharge = 30000
 	custom_materials = list(/datum/material/glass=300)
 	chargerate = 2000
 	rating = 3
@@ -246,7 +246,7 @@
 /obj/item/stock_parts/cell/hyper
 	name = "hyper-capacity power cell"
 	icon_state = "hpcell"
-	maxcharge = 30000
+	maxcharge = 40000
 	custom_materials = list(/datum/material/glass=400)
 	chargerate = 3000
 	rating = 4
@@ -258,7 +258,7 @@
 	name = "bluespace power cell"
 	desc = "A rechargeable transdimensional power cell."
 	icon_state = "bscell"
-	maxcharge = 40000
+	maxcharge = 60000
 	custom_materials = list(/datum/material/glass=600)
 	chargerate = 4000
 	rating = 5
@@ -369,12 +369,12 @@
 
 /obj/item/stock_parts/cell/magnetic
 	name = "magrifle power supply"
-	maxcharge = 12000
+	maxcharge = 24000			//12000 base, buffed to make it more on par with some ballistics.
 	chargerate = 600
 
 /obj/item/stock_parts/cell/magnetic/pistol
 	name = "magpistol power supply"
-	maxcharge = 6000
+	maxcharge = 12000
 
 /obj/item/stock_parts/cell/toymagburst
 	name = "toy mag burst rifle power supply"
