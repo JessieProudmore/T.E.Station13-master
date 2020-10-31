@@ -606,7 +606,6 @@
 /obj/machinery/chem_dispenser/mutagensaltpeter
 	name = "botanical chemical dispenser"
 	desc = "Creates and dispenses chemicals useful for botany."
-	flags_1 = NODECONSTRUCT_1
 
 	dispensable_reagents = list(
 		/datum/reagent/toxin/mutagen,
