@@ -262,7 +262,7 @@
 	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 90, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 
 /obj/item/clothing/suit/space/hardsuit/syndi/elite
-	armor = list("melee" = 50, "bullet" = 60, "laser" = 60, "energy" = 90, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
+	armor = list("melee" = 70, "bullet" = 80, "laser" = 80, "energy" = 90, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50, "wound" = 50)
 
 /obj/item/clothing/head/helmet/space/hardsuit/wizard
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 50, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100, "wound" = 35)
