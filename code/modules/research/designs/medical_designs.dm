@@ -241,6 +241,16 @@
 	build_path = /obj/item/storage/belt/organbox
 	category = list("Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
+	
+/datum/design/medbeam
+	name = "Medbeam"
+	desc = "A ranged tool for consistent healing. Getting more than one is a bad idea."
+	id = "organbox"
+	build_type = PROTOLATHE
+	materials = list(/datum/material/iron = 3000, /datum/material/glass = 1000, /datum/material/silver= 3500, /datum/material/gold = 3500, /datum/material/plastic = 5000, /datum/material/diamond = 6000)
+	build_path =  /obj/item/gun/medbeam
+	category = list("Medical Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
 
 ////////////////////////////////////////
 //////////Body Bags/////////////////////
