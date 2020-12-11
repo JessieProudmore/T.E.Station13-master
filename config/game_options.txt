@@ -117,13 +117,13 @@ CONTINUOUS TRAITOR
 CONTINUOUS TRAITORBRO
 CONTINUOUS TRAITORCHAN
 CONTINUOUS INTERNAL_AFFAIRS
-#CONTINUOUS NUCLEAR
-#CONTINUOUS REVOLUTION
+CONTINUOUS NUCLEAR
+CONTINUOUS REVOLUTION
 CONTINUOUS CULT
 CONTINUOUS CLOCKWORK_CULT
 CONTINUOUS CHANGELING
 CONTINUOUS WIZARD
-#CONTINUOUS MONKEY
+CONTINUOUS MONKEY
 CONTINUOUS BLOODSUCKER
 
 ##Note: do not toggle continuous off for these modes, as they have no antagonists and would thus end immediately!
@@ -222,9 +222,9 @@ SHUTTLE_REFUEL_DELAY 12000
 ## Variables calculate how number of antagonists will scale to population.
 ## Used as (Antagonists = Population / Coeff)
 ## Set to 0 to disable scaling and use default numbers instead.
-TRAITOR_SCALING_COEFF 6
-BROTHER_SCALING_COEFF 6
-CHANGELING_SCALING_COEFF 6
+TRAITOR_SCALING_COEFF 0
+BROTHER_SCALING_COEFF 0
+CHANGELING_SCALING_COEFF 0
 
 ## Variables calculate how number of open security officer positions will scale to population.
 ## Used as (Officers = Population / Coeff)
@@ -367,7 +367,7 @@ SEC_START_BRIG
 ## Set to 1 for "custom", silicons will start with the custom laws defined in silicon_laws.txt. (If silicon_laws.txt is empty, the AI will spawn with asimov and Custom boards will auto-delete.)
 ## Set to 2 for "random", silicons will start with a random lawset picked from random laws specified below.
 ## Set to 3 for "weighted random", using values in "silicon_weights.txt", a law will be selected, with weights specifed in that file.
-DEFAULT_LAWS 1
+DEFAULT_LAWS 2
 
 ## RANDOM LAWS ##
 ## ------------------------------------------------------------------------------------------
@@ -635,11 +635,11 @@ ECONOMY
 #DYNAMIC_VOTING
 
 ## Choose which Engine to start the round with. Weight is after the comma. Setting the weight to 0 removes the engine from rotation.
-BOX_RANDOM_ENGINE Box SM,3
-BOX_RANDOM_ENGINE Box Tesla,3
-BOX_RANDOM_ENGINE Box Singulo,3
-BOX_RANDOM_ENGINE Box SM 1x3,1
-BOX_RANDOM_ENGINE Box SM 5x5,1
+BOX_RANDOM_ENGINE Box SM,0
+BOX_RANDOM_ENGINE Box Tesla,2
+BOX_RANDOM_ENGINE Box Singulo,2
+BOX_RANDOM_ENGINE Box SM 1x3,0
+BOX_RANDOM_ENGINE Box SM 5x5,2
 BOX_RANDOM_ENGINE Box SM 3x,0
 BOX_RANDOM_ENGINE Box TEG,3
 BOX_RANDOM_ENGINE Box Empty,0
