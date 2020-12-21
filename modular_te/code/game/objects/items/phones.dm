@@ -41,7 +41,7 @@
 	..()
 
 /obj/item/phone/examine()
-	..()
+	. = ..()
 	if(broken)
 		. += "<span class='warning'>It appears to be broken!</span>"
 	else
