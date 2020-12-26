@@ -9,4 +9,5 @@
 ###############################################################################################
 
 JessieProudmore = Host
-Triple_Wammy = Trial Admin
+Triple_Wammy = Game Admin
+SandPoot = Trial Admin
