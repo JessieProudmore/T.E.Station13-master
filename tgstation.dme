@@ -4286,4 +4286,6 @@
 #include "modular_skyrat\modules\horrorform\code\modules\mob\hostile\true_changeling.dm"
 #include "modular_skyrat\tools\Redirector\textprocs.dm"
 #include "modular_te\code\game\objects\items\phones.dm"
+#include "modular_te\code\modules\client\loadout\uniform.dm"
+#include "modular_te\code\modules\clothing\under\syndicate.dm"
 // END_INCLUDE
