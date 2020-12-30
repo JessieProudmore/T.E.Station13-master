@@ -54,15 +54,66 @@
 			if(continues == "Yes")
 				var/new_ipc_chassis = input(user, "Choose a new chassis", "New Chassis") as null|anything in GLOB.ipc_chassis_list
 				if(new_ipc_chassis)
-					target.dna.species.mutant_bodyparts["ipc_chassis"] = new_ipc_chassis
+					target.dna.features["ipc_chassis"] = new_ipc_chassis
 		else if(issynthliz(target) && target.dna?.species?.mutant_bodyparts)
-			var/continues = input(user, "Do you wish to set the unit's appearances to synthlizard defaults?", "Additional Changes") as null|anything in list("Yes", "No")
+			var/continues = input(user, "Do you wish to set the unit's appearances to synthlizard defaults?", "Additional Changes") as null|anything in list("Yes", "Customize", "No")
 			if(continues == "Yes")
-				target.dna.species.mutant_bodyparts["ipc_antenna"] = "Synthetic Lizard - Antennae"
-				target.dna.species.mutant_bodyparts["mam_tail"] = "Synthetic Lizard"
-				target.dna.species.mutant_bodyparts["mam_snouts"] = "Synthetic Lizard - Snout"
-				target.dna.species.mutant_bodyparts["legs"] = "Digitigrade"
-				target.dna.species.mutant_bodyparts["mam_body_markings"] = "Synthetic Lizard - Plates"
+				target.dna.features["ipc_antenna"] = "Synthetic Lizard - Antennae"
+				target.dna.features["mam_tail"] = "Synthetic Lizard"
+				target.dna.features["mam_snouts"] = "Synthetic Lizard - Snout"
+				target.dna.features["legs"] = "Digitigrade"
+				target.Digitigrade_Leg_Swap(FALSE)
+				target.dna.features["mam_body_markings"] = "Synthetic Lizard - Plates"
+				target.dna.features["taur_body"] = null
+			if(continues == "Customize")
+				var/new_color1 = input(user, "Choose the main color:", "Synthlizard remodeling","#"+target.dna.features["mcolor"]) as color|null
+				if(new_color1)
+					var/temp_hsv = RGBtoHSV(new_color1)
+					if(ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3]) // mutantcolors must be bright
+						target.dna.features["mcolor"] = sanitize_hexcolor(new_color1)
+					else
+						to_chat(user, "<span class='notice'>You realize this is too dark and decide to keep going with the customization.</span>")
+				var/new_color2 = input(user, "Choose the secondary color:", "Synthlizard remodeling","#"+target.dna.features["mcolor2"]) as color|null
+				if(new_color2)
+					var/temp_hsv = RGBtoHSV(new_color2)
+					if(ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3]) // mutantcolors must be bright
+						target.dna.features["mcolor2"] = sanitize_hexcolor(new_color2)
+					else
+						to_chat(user, "<span class='notice'>You realize this is too dark and decide to keep going with the customization.</span>")
+				var/new_color3 = input(user, "Choose the tertiary color:", "Synthlizard remodeling","#"+target.dna.features["mcolor3"]) as color|null
+				if(new_color3)
+					var/temp_hsv = RGBtoHSV(new_color3)
+					if(ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3]) // mutantcolors must be bright
+						target.dna.features["mcolor3"] = sanitize_hexcolor(new_color3)
+					else
+						to_chat(user, "<span class='notice'>You realize this is too dark and decide to keep going with the customization.</span>")
+				var/new_antenna = input(user, "Choose a new antenna model", "Synthlizard remodeling") as null|anything in GLOB.synth_antennas_list			
+				if(new_antenna)
+					target.dna.features["ipc_antenna"] = new_antenna
+				var/new_tail = input(user, "Choose a new tail model", "Synthlizard remodeling") as null|anything in GLOB.synth_tails_list
+				if(new_tail)
+					target.dna.features["mam_tail"] = new_tail
+				var/new_snout = input(user, "Choose a new snout model", "Synthlizard remodeling") as null|anything in GLOB.synth_snouts_list
+				if(new_snout)
+					target.dna.features["mam_snouts"] = new_snout
+				var/new_leg = input(user, "Choose a new leg model", "Synthlizard remodeling") as null|anything in list("Plantigrade", "Digitigrade")	
+				if(new_leg)
+					target.dna.features["legs"] = new_leg
+					if(new_leg == "Digitigrade")
+						target.Digitigrade_Leg_Swap(FALSE)
+					else
+						target.Digitigrade_Leg_Swap(TRUE)
+				var/new_marking = input(user, "Choose a new marking style", "Synthlizard remodeling") as null|anything in GLOB.synth_markings_list
+				if(new_marking)
+					target.dna.features["mam_body_markings"] = new_marking
+				var/possible_taurs = GLOB.synth_taur_list
+				possible_taurs += "None"
+				var/new_taur = input(user, "Choose a new taur model", "Synthlizard remodeling") as null|anything in possible_taurs
+				if(new_taur)
+					if(new_taur == "None")
+						target.dna.features["taur_body"] = null
+					else
+						target.dna.features["taur_body"] = new_taur
 		if(target.dna?.species?.mutant_bodyparts)
 			var/continues = input(user, "Do you wish to set the reassign the unit's gender?", "Additional Changes") as null|anything in list("Yes", "No")
 			if(continues == "Yes")

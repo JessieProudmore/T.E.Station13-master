@@ -102,7 +102,16 @@
 	//Skyrat changes
 	if(!GLOB.ipc_chassis_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/ipc_chassis, GLOB.ipc_chassis_list)
-
+	if(!GLOB.synth_snouts_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/mam_snouts/synthliz, GLOB.synth_snouts_list)
+	if(!GLOB.synth_markings_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/mam_body_markings/synthliz, GLOB.synth_markings_list)
+	if(!GLOB.synth_tails_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/mam_tails/synthliz, GLOB.synth_tails_list)
+	if(!GLOB.synth_antennas_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/antenna/synthliz, GLOB.synth_antennas_list)
+	if(!GLOB.synth_taur_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/taur/synthliz, GLOB.synth_taur_list)
 	//End of skyrat changes
 
 	//snowflake check so people's ckey features don't get randomly put on unmonkeys/spawns

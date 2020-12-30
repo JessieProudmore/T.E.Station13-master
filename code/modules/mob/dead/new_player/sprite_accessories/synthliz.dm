@@ -1,3 +1,13 @@
+GLOBAL_LIST_EMPTY(synth_snouts_list)
+
+GLOBAL_LIST_EMPTY(synth_markings_list)
+
+GLOBAL_LIST_EMPTY(synth_tails_list)
+
+GLOBAL_LIST_EMPTY(synth_antennas_list)
+
+GLOBAL_LIST_EMPTY(synth_taur_list)
+
 //Synth snouts (This is the most important part)
 /datum/sprite_accessory/mam_snouts/synthliz
 	recommended_species = list("synthliz")

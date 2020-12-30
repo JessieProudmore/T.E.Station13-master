@@ -10,4 +10,4 @@
 
 JessieProudmore = Host
 Triple_Wammy = Game Admin
-SandPoot = Trial Admin
+SandPoot = Host
