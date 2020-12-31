@@ -7,13 +7,13 @@ SQL_ENABLED
 
 ## Server the MySQL database can be found at.
 ## Examples: localhost, 200.135.5.43, www.mysqldb.com, etc.
-ADDRESS 127.0.0.1
+ADDRESS 
 
 ## MySQL server port (default is 3306).
-PORT 3306
+PORT 
 
 ## Database for all SQL functions, not just feedback.
-FEEDBACK_DATABASE TEstation
+FEEDBACK_DATABASE 
 
 ## Prefix to be added to the name of every table, older databases will require this be set to erro_
 ## Note, this does not change the table names in the database, you will have to do that yourself.
@@ -24,22 +24,22 @@ FEEDBACK_DATABASE TEstation
 FEEDBACK_TABLEPREFIX SS13_
 
 ## Username/Login used to access the database.
-FEEDBACK_LOGIN BigGorl
+FEEDBACK_LOGIN 
 
 ## Password used to access the database.
 FEEDBACK_PASSWORD 
 
 ## Time in seconds for asynchronous queries to timeout
 ## Set to 0 for infinite
-ASYNC_QUERY_TIMEOUT 10
+ASYNC_QUERY_TIMEOUT 
 
 ## Time in seconds for blocking queries to execute before slow query timeout 
 ## Set to 0 for infinite
 ## Must be less than or equal to ASYNC_QUERY_TIMEOUT
-BLOCKING_QUERY_TIMEOUT 5
+BLOCKING_QUERY_TIMEOUT 
 
 ## The maximum number of additional threads BSQL is allowed to run at once
-BSQL_THREAD_LIMIT 50
+BSQL_THREAD_LIMIT 
 
 ## Uncomment to enable verbose BSQL communication logs
 #BSQL_DEBUG
