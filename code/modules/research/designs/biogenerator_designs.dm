@@ -4,7 +4,7 @@
 
 //Please be wary to not add inorganic items to the results such as generic glass bottles and metal.
 //as they kind of defeat the design of this feature.
-
+//T.E station/JessieProudmore edit. I like adding extra stuff to the biogen, like the rice and flower bags, gives more freedom to botanists, and allows chefs more variety without reliance of specific/tedious crops.
 /datum/design/milk
 	name = "10u Milk"
 	id = "milk"
